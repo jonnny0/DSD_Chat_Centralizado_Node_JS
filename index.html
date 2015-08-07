@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title id="title">CHAT NODEJS</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css" />
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="./javascript.js" ></script>
+    </head>
+    <body>
+        <div id="nombre_usuario">
+            <h2>Escribe un nombre de usuario</h2>
+            <form action="javascript:void(0)" onsubmit="conectar(this)" >
+                <input type="text" id="nombre" name="nombre" required autofocus />
+                <button type="submit" >Enviar</button>            
+            </form>     
+            <p id="usuario_ocupado" hidden>El nombre de usuario ya está ocupado
+                <br>Por favor introduce uno diferente</p>
+        </div>
+
+        <div id="chat" hidden>
+            <div id="izquierda">
+                <h2>Lista de mensajes</h2>
+                <textarea id="lista_mensajes" readonly ></textarea>
+
+                <h2>Nuevo mensaje</h2>
+                <form id="formulario" action="javascript:void(0)" onsubmit="enviar_mensaje(this)" >
+                    <input type="text" id="mensaje" name="mensaje" size="65" required />
+                    <button type="submit" >Enviar</button>    
+                </form>
+            </div>
+            <div id="derecha">
+                <h3>Usuarios conectados</h3>
+                <div id="clientes_conectados"></div>
+            </div>
+        </div>
+    </body>
+
+</html>

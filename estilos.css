@@ -1,0 +1,53 @@
+body {
+    background-image: url("fondo.jpg");
+    background-size: cover;
+}
+
+#nombre_usuario {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(153, 159, 242, .5);
+    border-style: outset;
+}
+
+#usuario_ocupado {
+    font-weight: bold;
+    color: red;
+}
+
+#chat {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#lista_mensajes {
+    resize: none;
+    width: 90%;
+    padding: 1%;
+    height: 70%;
+}
+
+#mensaje {
+    width: 80%;
+}
+
+#izquierda {
+    float: left;
+    width: 75%;
+    height: 95%;
+    padding: 1%;
+    text-align: center;
+    background-color: rgba(153, 159, 242, .5);
+}
+
+#derecha {
+    float: right;
+    width: 20%;
+    height: 95%;
+    background-color: rgba(238, 73, 73, .5);
+    padding: 1%; 
+}
